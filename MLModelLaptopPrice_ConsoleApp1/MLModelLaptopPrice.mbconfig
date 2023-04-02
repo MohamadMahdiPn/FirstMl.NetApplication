@@ -1,0 +1,293 @@
+﻿{
+  "TrainingTime": 10,
+  "Scenario": "Regression",
+  "DataSource": {
+    "Type": "TabularFile",
+    "Version": 1,
+    "FilePath": "D:\\MlNet\\FirstApp\\Ml.Net\\Data\\laptoppricesUS.tsv",
+    "Delimiter": "\t",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "CPU",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "GHz",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "GPU",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "RAM",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "RAMType",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Screen",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Storage",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "SSD",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Weight",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Price",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 1,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.62956055160578983,
+        "RuntimeInSeconds": 1.0579999685287476
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": -1.8875901252461347,
+        "RuntimeInSeconds": 0.44999998807907104
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.58186603099301348,
+        "RuntimeInSeconds": 0.48500001430511475
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -4.8791900200643772,
+        "RuntimeInSeconds": 0.4830000102519989
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaRegression",
+        "Score": 0.511187843856002,
+        "RuntimeInSeconds": 0.44999998807907104
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.65636728369473063,
+        "RuntimeInSeconds": 0.46299999952316284
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.635383240852357,
+        "RuntimeInSeconds": 0.43700000643730164
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.56625046093348508,
+        "RuntimeInSeconds": 0.375
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.70568615751430863,
+        "RuntimeInSeconds": 0.4050000011920929
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -4.9337584991903576,
+        "RuntimeInSeconds": 0.50400000810623169
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaRegression",
+        "Score": -0.13763717968161165,
+        "RuntimeInSeconds": 0.40599998831748962
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.66310012286746267,
+        "RuntimeInSeconds": 0.74400001764297485
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.4289320466711371,
+        "RuntimeInSeconds": 0.4779999852180481
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaRegression",
+        "Score": 0.53863402313145436,
+        "RuntimeInSeconds": 0.46500000357627869
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.565238864197524,
+        "RuntimeInSeconds": 0.31299999356269836
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.72129634026241418,
+        "RuntimeInSeconds": 0.43799999356269836
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -4.7788522047696862,
+        "RuntimeInSeconds": 0.52499997615814209
+      }
+    ],
+    "Pipeline": {
+      "parameter": {
+        "0": {
+          "OutputColumnNames": [
+            "CPU",
+            "GPU",
+            "RAMType",
+            "SSD"
+          ],
+          "InputColumnNames": [
+            "CPU",
+            "GPU",
+            "RAMType",
+            "SSD"
+          ]
+        },
+        "1": {
+          "OutputColumnNames": [
+            "GHz",
+            "RAM",
+            "Screen",
+            "Storage",
+            "Weight"
+          ],
+          "InputColumnNames": [
+            "GHz",
+            "RAM",
+            "Screen",
+            "Storage",
+            "Weight"
+          ]
+        },
+        "2": {
+          "InputColumnNames": [
+            "CPU",
+            "GPU",
+            "RAMType",
+            "SSD",
+            "GHz",
+            "RAM",
+            "Screen",
+            "Storage",
+            "Weight"
+          ],
+          "OutputColumnName": "Features"
+        },
+        "3": {
+          "NumberOfLeaves": 5,
+          "MinimumExampleCountPerLeaf": 27,
+          "LearningRate": 0.99999977667298645,
+          "NumberOfTrees": 30,
+          "SubsampleFraction": 0.040366253074979985,
+          "MaximumBinCountPerFeature": 559,
+          "FeatureFraction": 0.99999999,
+          "L1Regularization": 2E-10,
+          "L2Regularization": 0.041274080123405867,
+          "LabelColumnName": "Price",
+          "FeatureColumnName": "Features"
+        }
+      },
+      "estimators": [
+        "OneHotEncoding",
+        "ReplaceMissingValues",
+        "Concatenate",
+        "LightGbmRegression"
+      ]
+    },
+    "MetricName": "RSquared"
+  },
+  "Type": "TrainingConfig",
+  "Version": 2
+}
